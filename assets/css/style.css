@@ -4,6 +4,7 @@
 :root{
     --dark-primary:#1b1f24;
     --primary:#12bdff;
+    --primary-hover:#0c8ec2;
 }
 
 *{
@@ -30,18 +31,18 @@ header .logo{
     letter-spacing: 2px;
 }
 
-ol{
+header ol{
     display: flex;
     list-style: none;
 }
-ol li{
+header ol li{
     margin-left: 20px;
 }
-ol li a{
+header ol li a{
     color: white;
     text-decoration: none;
 }
-ol li a:hover{
+header ol li a:hover{
     color: var(--primary);
 }
 
@@ -78,4 +79,57 @@ section.hero-section{
 .hero-section-desc{
     color: #c4c4c4;
     /* color: brown; */
+}
+
+.social-icons{
+    margin: 20px 0;
+}
+.social-icons li{
+    margin-right: 15px;
+    /* padding: 10px; */
+    /* color: brown; */
+}
+.social-icons li a{
+    text-decoration: none;
+    color: white;
+    /* list-style: none; */
+}
+ol.social-icons{
+    list-style: none;
+    display: flex;
+}
+/* .social-icons li >a:hover{
+    color: var(--primary);
+} */
+
+.social-icons li a>i.fa-facebook:hover{
+    color: #316FF6;
+}
+.social-icons li a>i.fa-linkedin:hover{
+    color: #0077b5;
+}
+.social-icons li a >i.fa-instagram:hover{
+    color: #fccc63 ;
+}
+.social-icons li a>i.fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+
+/* butttons a */
+.btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+.btn.btn-primary{
+    font-weight: bold;
+    background-color: var(--primary);
+}
+.btn.btn-primary:hover{
+    background-color: var(--primary-hover);
+}
+.hero-btn{
+   margin-right: 10px;
 }
