@@ -1,54 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* global variable  */
-:root{
-    --dark-primary:#1b1f24;
-    --primary:#12bdff;
-    --primary-hover:#0c8ec2;
+:root {
+    --dark-primary: #1b1f24;
+    --primary: #12bdff;
+    --primary-hover: #0c8ec2;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Noto Sans", sans-serif;
 }
 
 /* header files  */
-header{
+header {
     background-color: #1b1f24;
     color: white;
     padding: 10px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
+
 /* logo class */
-header .logo{
+header .logo {
     color: var(--primary);
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-header ol{
+header ol {
     display: flex;
     list-style: none;
 }
-header ol li{
+
+header ol li {
     margin-left: 20px;
 }
-header ol li a{
+
+header ol li a {
     color: white;
     text-decoration: none;
 }
-header ol li a:hover{
+
+header ol li a:hover {
     color: var(--primary);
 }
 
 /* header buttton */
 
-header button{
+header button {
     padding: 10px 20px;
     font-weight: bold;
     background-color: var(--dark-primary);
@@ -56,7 +61,8 @@ header button{
     color: var(--primary);
     border-radius: 5px;
 }
-header button:hover{
+
+header button:hover {
     cursor: pointer;
     background-color: var(--primary);
     /* color: var(--dark-primary); */
@@ -64,7 +70,7 @@ header button:hover{
 }
 
 /* section:heme design */
-section.hero-section{
+section.hero-section {
     background-color: var(--dark-primary);
     color: white;
     display: flex;
@@ -72,64 +78,136 @@ section.hero-section{
     /* padding: 10px 40px; */
     padding: 10px 80px 0 240px;
 }
-.hero-section--tittle{
+
+.hero-section--tittle {
     font-size: 40px;
     font-weight: 900;
 }
-.hero-section-desc{
+
+.hero-section-desc {
     color: #c4c4c4;
     /* color: brown; */
 }
 
-.social-icons{
+.social-icons {
     margin: 20px 0;
 }
-.social-icons li{
+
+.social-icons li {
     margin-right: 15px;
     /* padding: 10px; */
     /* color: brown; */
 }
-.social-icons li a{
+
+.social-icons li a {
     text-decoration: none;
     color: white;
     /* list-style: none; */
 }
-ol.social-icons{
+
+ol.social-icons {
     list-style: none;
     display: flex;
 }
+
 /* .social-icons li >a:hover{
     color: var(--primary);
 } */
 
-.social-icons li a>i.fa-facebook:hover{
+.social-icons li a>i.fa-facebook:hover {
     color: #316FF6;
 }
-.social-icons li a>i.fa-linkedin:hover{
+
+.social-icons li a>i.fa-linkedin:hover {
     color: #0077b5;
 }
-.social-icons li a >i.fa-instagram:hover{
-    color: #fccc63 ;
+
+.social-icons li a>i.fa-instagram:hover {
+    color: #fccc63;
 }
-.social-icons li a>i.fa-twitter:hover{
+
+.social-icons li a>i.fa-twitter:hover {
     color: #1DA1F2;
 }
 
 
 /* butttons a */
-.btn{
+.btn {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     border: none;
 }
-.btn.btn-primary{
+
+.btn.btn-primary {
     font-weight: bold;
     background-color: var(--primary);
 }
-.btn.btn-primary:hover{
+
+.btn.btn-primary:hover {
     background-color: var(--primary-hover);
 }
-.hero-btn{
-   margin-right: 10px;
+
+.hero-btn {
+    margin-right: 10px;
+}
+
+.btn-second {
+    padding: 10px 20px;
+    color: var(--primary);
+    background-color: var(--dark-primary);
+    border: 1px solid var(--primary);
+    font-weight: 600;
+    border-radius: 5px;
+    /* border: none; */
+    /* border-radius: 1px solid var(--primary); */
+}
+/* about section  */
+.about-section{
+    background-color:#22282f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    /* padding: 10px 20px; */
+}
+.about-section >img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    box-shadow: 5px 5px 4opx var(--primary);
+}
+.about-section--desc{
+    /* color: brown; */
+    /* padding: 20px; */
+    margin-left: 100px;
+    max-width: 450px;
+}
+.about-section--desc h4{
+    font-size: 34px;
+}
+.about-section--desc ol{
+    /* margin-top: 10px; */
+    list-style: none;
+    margin: 10px 0;
+}
+.about-section--desc li{
+    margin-bottom: 5px;
+    color: grey;
+}
+.about-section--desc li >a{
+    text-decoration: none;
+    color: grey;
+}
+.about-section--desc li >a:hover{
+    /* color: var(--primary); */
+    color: var(--primary-hover);
+}
+.about-section--desc li strong{
+    color: white;
+}
+.about-section--desc h4 span{
+    color: var(--primary);
 }
