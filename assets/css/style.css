@@ -5,6 +5,7 @@
     --dark-primary: #1b1f24;
     --primary: #12bdff;
     --primary-hover: #0c8ec2;
+    --notosans:"Noto Sans", sans-serif;
 }
 
 * {
@@ -267,4 +268,54 @@ ol.social-icons {
     display: flex;
     justify-content: center;
     /* align-items: end; */
+}
+
+
+/* -----contact section---- */
+.Contact-section{
+    background-color: #14171c;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+.Contact-section h4{
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 900;
+}
+.Contact-section h4 >span{
+    color: var(--primary);
+}
+.Contact-section form input,textarea{
+    background-color:#c4c4c4;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    width: 350px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    resize: none;
+    font-family: var(--primary);
+}
+/* .Contact-section form textarea{
+    background-color:#c4c4c4;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    width: 350px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+} */
+
+/* ----foooter---- */
+footer{
+    background-color:var(--dark-primary);
+    color:grey;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--primary);
 }
