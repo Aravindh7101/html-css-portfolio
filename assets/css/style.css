@@ -5,13 +5,17 @@
     --dark-primary: #1b1f24;
     --primary: #12bdff;
     --primary-hover: #0c8ec2;
-    --notosans:"Noto Sans", sans-serif;
+    --notosans: "Noto Sans", sans-serif;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -163,9 +167,10 @@ ol.social-icons {
     /* border: none; */
     /* border-radius: 1px solid var(--primary); */
 }
+
 /* about section  */
-.about-section{
-    background-color:#22282f;
+.about-section {
+    background-color: #22282f;
     color: white;
     display: flex;
     justify-content: center;
@@ -173,64 +178,76 @@ ol.social-icons {
     padding: 60px;
     /* padding: 10px 20px; */
 }
-.about-section >img{
+
+.about-section>img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     border: 2px solid var(--primary);
     box-shadow: 5px 5px 4opx var(--primary);
 }
-.about-section--desc{
+
+.about-section--desc {
     /* color: brown; */
     /* padding: 20px; */
     margin-left: 100px;
     max-width: 450px;
 }
-.about-section--desc h4{
+
+.about-section--desc h4 {
     font-size: 34px;
 }
-.about-section--desc ol{
+
+.about-section--desc ol {
     /* margin-top: 10px; */
     list-style: none;
     margin: 10px 0;
 }
-.about-section--desc li{
+
+.about-section--desc li {
     margin-bottom: 5px;
     color: grey;
 }
-.about-section--desc li >a{
+
+.about-section--desc li>a {
     text-decoration: none;
     color: grey;
 }
-.about-section--desc li >a:hover{
+
+.about-section--desc li>a:hover {
     /* color: var(--primary); */
     color: var(--primary-hover);
 }
-.about-section--desc li strong{
+
+.about-section--desc li strong {
     color: white;
 }
-.about-section--desc h4 span{
+
+.about-section--desc h4 span {
     color: var(--primary);
 }
 
 /* ---work-section--- */
-.work-section{
+.work-section {
     background-color: var(--dark-primary);
     color: white;
     padding: 50px;
     text-align: center;
 }
-.work-section--title{
+
+.work-section--title {
     /* color: brown; */
     font-size: 35px;
     font-weight: 900px;
     margin-bottom: 40px;
 }
-.work-section--title span{
+
+.work-section--title span {
     color: var(--primary);
 }
-.work-section-box{
-    background-color:#22282f;
+
+.work-section-box {
+    background-color: #22282f;
     padding: 30px;
     max-width: 300px;
     text-align: left;
@@ -238,33 +255,40 @@ ol.social-icons {
     cursor: pointer;
     margin-left: 40px;
 }
-.work-section-box:hover{
+
+.work-section-box:hover {
     background-color: var(--dark-primary);
 }
-.work-section-box p{
+
+.work-section-box p {
     color: grey;
-    font-size:15px;
+    font-size: 15px;
 }
-.work-section-box a{
+
+.work-section-box a {
     text-decoration: none;
     color: orange;
     /* margin-top: 10px; */
 }
-.work-section-dec{
+
+.work-section-dec {
     margin-top: 10px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
-.work-section-icon{
+
+.work-section-icon {
     background-color: #0077b5;
     padding: 6px;
     /* height: auto; */
     border-radius: 50%;
     /* margin-bottom: 50px; */
 }
-.work-section-icon:hover{
+
+.work-section-icon:hover {
     background-color: var(--primary-hover);
 }
-.work-section-items{
+
+.work-section-items {
     display: flex;
     justify-content: center;
     /* align-items: end; */
@@ -272,22 +296,26 @@ ol.social-icons {
 
 
 /* -----contact section---- */
-.Contact-section{
+.Contact-section {
     background-color: #14171c;
     color: #fff;
     padding: 40px;
     text-align: center;
 }
-.Contact-section h4{
+
+.Contact-section h4 {
     font-size: 30px;
     margin: 20px 0;
     font-weight: 900;
 }
-.Contact-section h4 >span{
+
+.Contact-section h4>span {
     color: var(--primary);
 }
-.Contact-section form input,textarea{
-    background-color:#c4c4c4;
+
+.Contact-section form input,
+textarea {
+    background-color: #c4c4c4;
     padding: 5px 10px;
     outline: none;
     border: none;
@@ -297,6 +325,7 @@ ol.social-icons {
     resize: none;
     font-family: var(--primary);
 }
+
 /* .Contact-section form textarea{
     background-color:#c4c4c4;
     padding: 5px 10px;
@@ -308,14 +337,64 @@ ol.social-icons {
 } */
 
 /* ----foooter---- */
-footer{
-    background-color:var(--dark-primary);
-    color:grey;
+footer {
+    background-color: var(--dark-primary);
+    color: grey;
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: var(--primary);
+}
+
+/* -----mediaquery----- */
+@media only screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+
+    /* ---her0 section---- */
+    section.hero-section {
+        flex-direction: column;
+        padding: 40px;
+        /* padding: 5px 40px; */
+    }
+    .hero-btn{
+        margin-bottom: 20px;
+    }
+
+    /* ----about section--- */
+    section.about-section{
+        flex-direction: column;
+    }
+    .about-section--desc{
+        margin-top: 30px;
+        margin-left: 50px;
+        max-width: fit-content;
+    }
+    /* --my works--- */
+    section.work-section{
+        padding: 30px 20px;
+    }
+    div.work-section-items{
+        flex-direction: column;
+        /* margin-bottom: 20px; */
+    }
+    .work-section-box{
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* ------contact section---- */
+    .Contact-section form input,
+    textarea{
+        width: 90%;
+    }
 }
