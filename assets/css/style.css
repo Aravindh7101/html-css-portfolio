@@ -29,6 +29,11 @@ header {
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    /* width: 100%; */
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 /* logo class */
@@ -81,7 +86,7 @@ section.hero-section {
     display: flex;
     align-items: center;
     /* padding: 10px 40px; */
-    padding: 10px 80px 0 240px;
+    padding: 60px 80px 0 240px;
 }
 
 .hero-section--tittle {
